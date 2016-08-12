@@ -1,0 +1,12 @@
+version: '2'
+services:
+  docker-volume-netshare:
+    image: deadroot/docker-volume-netshare:latest
+    net: host
+    privileged: true
+    restart: always
+    volumes_from:
+    - all-volumes
+    volumes:
+    - /run/docker/plugins:/run/docker/plugins:rw
+    
