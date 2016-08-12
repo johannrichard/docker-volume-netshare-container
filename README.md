@@ -7,12 +7,9 @@ docker-volume-netshare:
   image: deadroot/docker-volume-netshare:latest
   command: efs
   net: host
-  net: host
-  pid: host
-  uts: host
-  ipc: host
   privileged: true
   restart: always
   volumes:
   - /run/docker/plugins:/run/docker/plugins:rw
+  - /var/lib/docker-volumes/netshare:/var/lib/docker-volumes/netshare:rw
 ```
