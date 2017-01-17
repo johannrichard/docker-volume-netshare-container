@@ -11,4 +11,4 @@ RUN wget -O /usr/bin/docker-volume-netshare ${PLUGIN_NETSHARE_RELEASE} \
     && chmod +x /usr/bin/docker-volume-netshare
 
 ENTRYPOINT ["/usr/bin/docker-volume-netshare"]
-CMD ["efs"]
+CMD ["efs", "--verbose"]
