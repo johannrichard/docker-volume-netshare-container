@@ -4,7 +4,7 @@ How to run: look at [docker-compose.yml](docker-compose.yml)
 
 ```
 docker-volume-netshare:
-  image: deadroot/docker-volume-netshare:latest
+  image: ephillipe/docker-volume-netshare:latest
   command: efs
   net: host
   privileged: true
