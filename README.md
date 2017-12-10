@@ -10,6 +10,7 @@ docker-volume-netshare:
   privileged: true
   restart: always
   volumes:
+  - /run:/run
   - /var/run:/var/run:rw
   - /dev:/host/dev:rw
   - /run/docker/plugins:/run/docker/plugins:rw
