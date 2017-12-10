@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 ARG PLUGIN_NETSHARE_VERSION=0.34
-ARG PLUGIN_NETSHARE_ARCH=amd64
+ARG PLUGIN_NETSHARE_ARCH=arm
 ENV PLUGIN_NETSHARE_RELEASE=https://github.com/ContainX/docker-volume-netshare/releases/download/v${PLUGIN_NETSHARE_VERSION}/docker-volume-netshare_${PLUGIN_NETSHARE_VERSION}_linux_${PLUGIN_NETSHARE_ARCH}-bin
 
 RUN apk add --update wget nfs-utils ca-certificates &&\
